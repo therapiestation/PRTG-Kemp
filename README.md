@@ -1,5 +1,5 @@
 # PRTG-Kemp
-PRTG Templates for the Kemp REST API using the PRTG REST custom sensor. Place the template files under $INSTALLATION-DIRECTORY$\Custom Sensors\rest to use them while creating a REST custom sensor.
+PRTG Templates for the Kemp REST API using the PRTG REST custom sensor. Place the template files under "$INSTALLATION-DIRECTORY$\Custom Sensors\rest" to use them while creating a REST custom sensor.
 
 ## kemp.loadbalancer.template
 
