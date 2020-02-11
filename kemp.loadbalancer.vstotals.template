@@ -1,0 +1,68 @@
+{
+  "prtg": {
+    "description" : {
+      "device": "Kemp Loadmaster",
+      "query": "/access/vstotals",
+      "comment": "Documentation is on https://support.kemptechnologies.com/hc/en-us/articles/203863435-RESTful-API"
+    },
+    "result": [
+      {
+        "channel": "Virtual Services Up" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.VSTotals.Up
+      },
+      {
+        "channel": "Virtual Services Down" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.VSTotals.Down,
+		"limitmaxerror": "1",
+		"limitmode": "1"
+      },
+      {
+        "channel": "Virtual Services Disabled" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.VSTotals.Disabled,
+		"limitmaxwarning": "1",
+		"limitmode": "1"
+      },      
+	  {
+        "channel": "Sub Virtual Services Up" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.SUBVSTotals.Up
+      },
+      {
+        "channel": "Sub Virtual Services Down" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.SUBVSTotals.Down,
+		"limitmaxerror": "1",
+		"limitmode": "1"
+      },
+      {
+        "channel": "Sub Virtual Services Disabled" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.SUBVSTotals.Disabled,
+		"limitmaxwarning": "1",
+		"limitmode": "1"
+      },
+	  	  {
+        "channel": "Real Servers Up" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.RSTotals.Up
+      },
+      {
+        "channel": "Real Servers Down" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.RSTotals.Down,
+		"limitmaxerror": "1",
+		"limitmode": "1"
+      },
+      {
+        "channel": "Real Servers Disabled" ,
+        "unit": "Count",
+        "value": $.Response.Success.Data.RSTotals.Disabled,
+		"limitmaxwarning": "1",
+		"limitmode": "1"
+      }
+    ]
+  }
+}
